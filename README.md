@@ -27,16 +27,6 @@ The simulation produces angular velocity plots and a 3D visualisation of gaze ve
 - Angular velocity visualisation
 - 3D gaze vector movement plot
 
-## Background
-
-Eye movement is controlled by the coordinated action of extraocular muscles. This repository provides a simplified computational implementation inspired by biomechanical modelling of the oculomotor system.
-
-The model is based on the following reference:
-
-> A. D. Polpitaya and B. K. Ghosh, “Modelling the dynamics of oculomotor system in three dimensions,”  
-> 42nd IEEE International Conference on Decision and Control, 2003, pp. 6418–6422.  
-> DOI: 10.1109/CDC.2003.1272353
-
 ## Repository Structure
 
 ```text
@@ -56,46 +46,6 @@ Recommended environment:
 - MATLAB R2020a or later
 
 No additional MATLAB toolbox is currently required for running the main script.
-
-## Installation
-
-Clone the repository using Git:
-
-```bash
-git clone https://github.com/Hesam-lab/eye-model.git
-```
-
-Then open the project folder in MATLAB.
-
-## How to Run
-
-In MATLAB, navigate to the repository folder and run:
-
-```matlab
-main
-```
-
-The script will simulate the gaze movement and generate several figures.
-
-## Input Parameters
-
-The initial and final gaze vectors are defined in `main.m`:
-
-```matlab
-X1 = [1; 1.3; 2];   % Initial gaze vector
-X2 = [1; 3; 0.7];   % Final gaze vector
-```
-
-You can modify these values to simulate different gaze transitions.
-
-For example:
-
-```matlab
-X1 = [1; 0; 0];
-X2 = [0; 1; 0];
-```
-
-Both vectors should be non-zero 3D column vectors.
 
 ## Outputs
 
@@ -118,6 +68,7 @@ The model starts with an initial gaze vector and a final gaze vector:
 X1 = [1; 1.3; 2];
 X2 = [1; 3; 0.7];
 ```
+You can modify these values to simulate different gaze transitions.
 
 ### 2. Rotation Calculation
 
@@ -153,18 +104,6 @@ The model includes simplified parameters for:
 ### 5. Eye Movement Simulation
 
 The simulation updates angular velocity, torque, and gaze direction iteratively.
-
-## Example Output
-
-After running `main.m`, MATLAB will display plots showing angular velocity changes and the movement of the gaze vector in 3D space.
-
-The final 3D plot uses:
-
-```matlab
-quiver3
-```
-
-to visualise the direction of gaze movement.
 
 ## Citation
 
