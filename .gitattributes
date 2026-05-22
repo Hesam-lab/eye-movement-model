@@ -1,2 +1,21 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# MATLAB autosave files
+*.asv
+
+# MATLAB temporary files
+*.m~
+
+# MATLAB binary files
+*.mat
+
+# Simulink cache and code generation
+slprj/
+*.slxc
+
+# Generated figures
+*.fig
+*.png
+*.jpg
+
+# OS files
+.DS_Store
+Thumbs.db
