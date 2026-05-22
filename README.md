@@ -33,7 +33,7 @@ Eye movement is controlled by the coordinated action of extraocular muscles. Thi
 
 The model is based on the following reference:
 
-> A. D. Polpitaya and B. K. Ghosh, “Modeling the dynamics of oculomotor system in three dimensions,”  
+> A. D. Polpitaya and B. K. Ghosh, “Modelling the dynamics of oculomotor system in three dimensions,”  
 > 42nd IEEE International Conference on Decision and Control, 2003, pp. 6418–6422.  
 > DOI: 10.1109/CDC.2003.1272353
 
@@ -166,47 +166,6 @@ quiver3
 
 to visualise the direction of gaze movement.
 
-## Suggested Repository Improvements
-
-Future versions of this repository could include:
-
-- Refactoring `main.m` into separate reusable functions
-- Adding detailed comments for each model parameter
-- Adding example output figures to the README
-- Adding unit tests for mathematical components
-- Validating the simulation against the original published model
-- Adding a `src/` folder for model functions
-- Adding an `examples/` folder for different gaze movement scenarios
-
-A possible future structure could be:
-
-```text
-eye-model/
-│
-├── main.m
-├── README.md
-├── LICENSE
-├── .gitignore
-│
-├── src/
-│   ├── compute_rotation.m
-│   ├── generate_activation.m
-│   ├── generate_torque.m
-│   └── simulate_eye_movement.m
-│
-└── examples/
-    └── example_gaze_transition.m
-```
-
-## Known Limitations
-
-- The current implementation is a simplified research simulation.
-- All model parameters are fixed inside `main.m`.
-- The code has not yet been modularised into separate functions.
-- The model has not yet been validated against experimental eye-tracking data.
-- The simulation is not currently designed for real-time gaze control.
-- Further checking may be needed for the rotation matrix update step.
-
 ## Citation
 
 If you use or refer to this code, please cite the original model paper:
@@ -221,7 +180,3 @@ doi: 10.1109/CDC.2003.1272353
 ## Author
 
 **Hesam Shokouh Alaei**
-
-## License
-
-No license has been added yet. If you want others to reuse, modify, or distribute this code, consider adding an open-source license such as the MIT License.
